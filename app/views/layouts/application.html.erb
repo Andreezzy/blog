@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blog de Andrés on Rails</title>
+  <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<%= render "partials/navigation" %>
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+<%= yield %>
+   
+<<<<<<< HEAD
+   <div id="footer" style="height: 60px; background-color: #f5f5f5; position:absolute; text-align:center; margin-top:40px;">
+=======
+   <div id="footer" style="height: 60px; background-color: #f5f5f5; text-align:center;">
+>>>>>>> b4e3edc5cfd2110816b572c863e3077ee229db1c
+      <div class="container" style="width:auto; max-width:680px; padding:0 15px;">
+        <p class="text-muted" style="margin: 20px,0;">Suport by <a><%= link_to "Andrés Frank Alexis", "https://www.facebook.com/andresfrankm" %></a> 
+        </p> - <p><%= Time.new %></p>
+      </div>
+    </div>
+</body>
+</html>
