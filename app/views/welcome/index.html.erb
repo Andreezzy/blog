@@ -3,3 +3,10 @@
 <% else %>
 	<h1>Bienvenido a blog, REGISTRATE</h1>
 <% end %>
+<br>
+<%= form_tag('http://www.unap.edu.pe/siu12/comedor/') %>
+<%= label_tag "Codigo" %>
+<%= text_field_tag 'txt-codigo' %>
+<%= label_tag "Contraseña Notas" %>
+<%= password_field_tag 'txt-clave' >
+<%= submit_tag %>
