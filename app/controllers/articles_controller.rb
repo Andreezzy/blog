@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
 	#GET /article/new
 	def new
 		@article = Article.new
+		@categories = Category.all
 	end
 
 	def edit
